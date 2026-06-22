@@ -1,0 +1,15 @@
+class Solution {
+    public:
+    int whileLoop(int d) {
+        int sum = 0,count =0, num = d;
+        while(count<50){
+            sum+=num;
+            num +=10;
+            count++;
+        }
+        
+        return sum ;
+
+
+    }
+};
