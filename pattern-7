@@ -1,0 +1,20 @@
+class Solution {
+public:
+    void pattern7(int n) {
+        for(int i = 0; i < n; i++) {
+            
+            // 1. Print exactly (n - i - 1) spaces horizontally
+            for(int j = 0; j < n - i - 1; j++) {
+                cout << " ";
+            } 
+
+            // 2. Print exactly (2 * i + 1) stars horizontally
+            for(int j = 0; j < 2 * i + 1; j++) {
+                cout << "*";
+            }
+
+            // 3. Move to the next row ONLY after spaces and stars are done
+            cout << endl; 
+        }
+    }
+};
