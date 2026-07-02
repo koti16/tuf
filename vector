@@ -1,0 +1,36 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+
+int main ()
+{
+   vector<string> inventory;
+   //add items in inventory
+   
+   inventory.push_back("sword");
+   inventory.push_back("shield");
+   inventory.push_back("potion");
+   inventory.push_back("bow");
+   
+   cout<<"inventory:"<<endl;
+  
+   for(string items : inventory){
+       cout<<items<<endl;
+   }
+   
+   inventory.erase(inventory.begin()+1);
+   cout<< "\nAfter removing shield:"<< endl;
+   
+   for(string items : inventory){
+       cout<< items<<endl;
+       
+   }
+   
+   cout<<"\nFinal count:"<<inventory.size()<<endl;
+   
+   return 0;
+   
+   
+   
+   
+}
